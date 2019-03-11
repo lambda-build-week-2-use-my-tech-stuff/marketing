@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v9/6xKtdSZaM9iE8KbpRA_hK1QI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  src: local('VT323 Regular'), local('VT323-Regular'), url(https://fonts.gstatic.com/s/vt323/v10/pxiKyp0ihIEF2isfFJA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v13/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
+.top-bar {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  font-family: 'Quicksand', sans-serif;
+  z-index: 50;
+}
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  color: ghostwhite;
+}
+.top-bar .logo-main {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  margin-right: 5px;
+}
+.top-bar .tech {
+  display: inline-block;
+  font-family: 'VT323', monospace;
+  font-size: 1.1rem;
+}
+.top-bar .container-right {
+  width: 173px;
+  display: flex;
+  justify-content: space-around;
+}
+@media ( max-width :680px ) {
+  .top-bar .abtus {
+    display: none;
+  }
+}
+.top-bar .topBtn {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: orange;
+  font-weight: bold;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+.top-bar .topBtn:hover {
+  cursor: pointer;
+}
+.top-bar .logIn {
+  background-color: #27c51e;
+}
+.header {
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3rem;
+  display: flex;
+  color: whitesmoke;
+  justify-content: center;
+}
+.header .back-text {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  background: linear-gradient(90deg, #4632aa, #00a5ff 50%, #24c6dc);
+  transform: skewY(-13deg);
+  top: -200px;
+}
+.header .back-text .texture:first-child {
+  position: absolute;
+  width: calc(100%/3);
+  height: 27%;
+  top: calc(100%/4/6.5);
+  background: #2c419b;
+}
+.header .back-text .texture:nth-child(2) {
+  position: absolute;
+  width: calc(100%/3);
+  height: 20.9%;
+  top: calc(100%/4/2.5);
+  background: #0087ea;
+  right: 33.5%;
+}
+.header .back-text .texture:nth-child(3) {
+  position: absolute;
+  width: calc(100%/3);
+  height: 20.9%;
+  top: calc(100%/1.15);
+  background: #02b7ff;
+  right: -10.5%;
+}
+.header .background {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  z-index: 50;
+  margin-top: 70px;
+  text-align: center;
+}
+@media ( max-width :680px ) {
+  .header .background h3 {
+    font-size: 2.063rem;
+  }
+}
+.header .background p {
+  width: 100%;
+  font-size: 1.25rem;
+}
+@media ( max-width :680px ) {
+  .header .background p {
+    margin: 10px;
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+  }
+}
+.header .background .button-signup {
+  background: orange;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 30px;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+.header .background .button-signup:hover {
+  cursor: pointer;
+}
+@media ( max-width :680px ) {
+  .header .background .button-signup {
+    width: 70%;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

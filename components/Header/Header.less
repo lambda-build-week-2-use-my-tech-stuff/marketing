@@ -1,0 +1,103 @@
+.header{
+    width:100%;
+    // position:relative;
+    font-family: @header-font;
+    font-size: 3rem;
+    
+    display:flex;
+    color: whitesmoke;
+    justify-content: center;
+    
+    .back-text{
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        position:absolute;
+        background:linear-gradient(90deg,  #4632aa, #00a5ff 50%, #24c6dc);
+        transform: skewY(-13deg);
+        top: -200px;
+        .texture{
+            
+            &:first-child{
+                position:absolute;
+                width:calc(100%/3);
+                height: 27%;
+                top: calc(100%/4/6.5);
+                background: #2c419b;
+
+            }
+            &:nth-child(2){
+                position:absolute;
+                width:calc(100%/3);
+                height:20.9%;
+                top:calc(100%/4/2.5);
+                background: #0087ea;
+                right: 33.5%;
+            }
+
+            &:nth-child(3){
+                position:absolute;
+                width:calc(100%/3);
+                height:20.9%;
+                top: calc(100%/1.15);
+                background: #02b7ff;
+                right: -10.5%;
+            }
+            
+        }
+    }
+    .background{
+        display:flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        width: 600px;
+        justify-content: center;  
+        align-items: center;
+        height:300px;
+        z-index:50;
+        margin-top:70px;
+        text-align:center;
+
+    
+
+        h3{
+            @media @mobile{
+             font-size: 2.063rem;
+            }
+        }
+       
+
+        p{
+            width:100%;
+            font-size: 1.25rem;
+
+            @media @mobile{
+                margin:10px;
+                margin-bottom:40px;
+                font-size: 1.3rem;
+            }
+        }
+
+        .button-signup{
+            background:orange;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 30px;
+            width:30%;
+            padding:20px;
+            text-align: center;
+            box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            @media @mobile{
+                width:70%;
+            }
+
+        }
+        
+        
+    }
+}
