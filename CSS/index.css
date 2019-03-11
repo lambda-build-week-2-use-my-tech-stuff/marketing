@@ -173,6 +173,33 @@
     width: 70%;
   }
 }
+.feature-content {
+  margin-top: 165px;
+  flex-wrap: wrap;
+}
+.feature-content h3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.feature-content .column-cont {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.feature-content .column-cont .left-column {
+  height: 500px;
+  width: 40%;
+  background: blue;
+}
+.feature-content .column-cont .right-column {
+  height: 500px;
+  width: 40%;
+  background: red;
+}
+.bottom {
+  height: 300px;
+}
 * {
   box-sizing: border-box;
 }
