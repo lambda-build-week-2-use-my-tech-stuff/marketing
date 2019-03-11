@@ -1,0 +1,54 @@
+.top-bar{
+    width:100%;
+    padding:20px;
+    position: absolute;
+    font-family: @header-font;
+    z-index: 50;
+
+    .container{
+        display:flex;
+        
+        justify-content: space-between;
+        align-items: baseline;
+        width:100%;
+        color:ghostwhite;
+    }
+
+    .logo-main{
+        font-family: 'Pacifico', cursive;
+        font-size: 2rem;
+        margin-right: 5px;
+    }
+    .tech{
+        display:inline-block;
+        font-family: @logo-tech;
+        font-size: 1.1rem;
+    }
+    .container-right{
+        width: 173px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    @media @mobile{
+    .abtus{
+        display:none;
+    }
+    }
+    .topBtn{
+        border-radius: 10px;
+        padding: 10px;
+        background-color: orange;
+        font-weight: bold;
+        box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .logIn{
+        background-color: #27c51e;
+    }
+    
+}
