@@ -19,19 +19,80 @@
     .column-cont-about{
 
         width: 100%;
-        background: peachpuff;
+        
         
         .grid-container{
             display:grid;
-            grid-template-rows: repeat(7,1fr);
+            grid-template-rows: repeat(3,1fr);
             grid-template-columns: repeat(3,1fr);
             // height: 600;
             grid-row-gap: 20px;
+            grid-column-gap: 40px;
 
+            
             .preview{
-                height: 200px;
+                // height: 200px;
                 border-radius:  35px;
+                background:#4632aa;
+                overflow:hidden;
+                box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+               .team-img{
+                
+                   img{
+                       width:100%;
+                       
+                   }
+               }
+               .team-content{
+                   grid-column: 2/ span 2;
+               }
             }
+
+            .one{
+                grid-column: 1/span 1;
+            }
+
+            .two{
+                grid-column: 2 / span 1;
+                grid-row: 1/ span 1;
+
+
+            }
+
+            .three{
+                grid-column: 3 / span 1;
+                grid-row: 1/ span 1;
+
+
+            }
+
+            .four{
+                grid-column: 1 / span 1;
+                grid-row: 2/ span 1;
+
+
+            }
+
+            .five{
+                grid-column: 2 / span 1;
+                grid-row: 2/ span 1;
+
+
+            }
+            .six{
+                grid-column: 3 / span 1;
+                grid-row: 2/ span 1;
+
+
+            }
+
+            .seven{
+                grid-column: 2 / span 1;
+                grid-row: 3/ span 1;
+
+
+            }
+            
         }
     
     }
