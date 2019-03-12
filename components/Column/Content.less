@@ -6,7 +6,11 @@
 
     justify-content: center;
     padding: 20%;
-    
+
+    @media @mobile {
+        margin-top: 140%;
+    }
+
     h3{
         display:flex;
         justify-content: flex-start;
@@ -19,8 +23,8 @@
     .column-cont-about{
 
         width: 100%;
-        
-        
+
+
         .grid-container{
             display:grid;
             grid-template-rows: repeat(3,1fr);
@@ -29,18 +33,23 @@
             grid-row-gap: 20px;
             grid-column-gap: 40px;
 
-            
+            @media @mobile {
+            display: flex;
+            flex-direction: column;
+            }
+
             .preview{
                 // height: 200px;
                 border-radius:  35px;
                 background:#4632aa;
                 overflow:hidden;
                 box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+            
                .team-img{
-                
+
                    img{
                        width:100%;
-                       
+
                    }
                }
                .team-content{
@@ -92,11 +101,11 @@
 
 
             }
-            
+
         }
-    
+
     }
-    
+
     .column-cont{
         display: flex;
         width: 100%;
@@ -120,7 +129,7 @@
                 color: #44454b;
                 align-items: center;
                 list-style-image: url('https://upload.wikimedia.org/wikipedia/commons/8/86/Chevron-right%2C_Web_Fundamentals.svg');
-                
+
             }
 
         }
@@ -145,7 +154,7 @@
 
             .one{
                 grid-row: 3/span 2;
-                box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025); 
+                box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
                 // img{
                 //     height:80%;
                 //     width:100%;
@@ -156,24 +165,24 @@
                     background-color: orange;
                     font-weight: bold;
                     box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
-            
+
                     &:hover{
                         cursor: pointer;
                     }
                 }
-            
+
                 .logIn{
                     background-color: #27c51e;
                 }
             }
             .two{
                 grid-row: 2/span 2;
-                box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025); 
+                box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
             }
             .three{
                 grid-row: 1 / span 2;
                 grid-column: 3 / span 2;
-                box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025); 
+                box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
             }
         }
     }
