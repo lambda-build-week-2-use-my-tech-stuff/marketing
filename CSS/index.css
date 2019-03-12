@@ -102,28 +102,54 @@
   position: absolute;
   background: linear-gradient(90deg, #4632aa, #00a5ff 50%, #24c6dc);
   transform: skewY(-13deg);
-  top: -200px;
+  top: 0px;
+  transform-origin: 0;
 }
 .header .back-text .texture:first-child {
   position: absolute;
   width: calc(100%/3);
-  height: 27%;
-  top: calc(100%/4/6.5);
+  height: 23%;
+  top: calc(0%);
   background: #2c419b;
+}
+@media ( max-width :680px ) {
+  .header .back-text .texture:first-child {
+    display: none;
+  }
 }
 .header .back-text .texture:nth-child(2) {
   position: absolute;
   width: calc(100%/3);
-  height: 20.9%;
+  height: 13%;
   top: calc(100%/4/2.5);
   background: #0087ea;
   right: 33.5%;
 }
+@media ( max-width :680px ) {
+  .header .back-text .texture:nth-child(2) {
+    display: none;
+  }
+}
 .header .back-text .texture:nth-child(3) {
+  right: 23.5%;
+}
+@media ( max-width :680px ) {
+  .header .back-text .texture:nth-child(3) {
+    display: block;
+    position: absolute;
+    width: calc(100%/3);
+    height: 23%;
+    top: 0%;
+    background: #02b7ff;
+    right: 27.5%;
+    top: -13%;
+  }
+}
+.header .back-text .texture:nth-child(4) {
   position: absolute;
   width: calc(100%/3);
   height: 20.9%;
-  top: calc(100%/1.15);
+  top: 79%;
   background: #02b7ff;
   right: -10.5%;
 }
