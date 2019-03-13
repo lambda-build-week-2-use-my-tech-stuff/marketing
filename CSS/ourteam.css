@@ -124,6 +124,11 @@
   top: 0px;
   transform-origin: 0;
 }
+@media ( max-width :680px ) {
+  .header .back-text {
+    height: 106%;
+  }
+}
 .header .back-text .texture:first-child {
   position: absolute;
   width: calc(100%/3);
@@ -134,6 +139,11 @@
 @media ( max-width :680px ) {
   .header .back-text .texture:first-child {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .header .back-text .texture:first-child {
+    height: 16%;
   }
 }
 .header .back-text .texture:nth-child(2) {
@@ -147,6 +157,12 @@
 @media ( max-width :680px ) {
   .header .back-text .texture:nth-child(2) {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .header .back-text .texture:nth-child(2) {
+    height: 16%;
+    top: calc(-1%/4/2.5);
   }
 }
 .header .back-text .texture:nth-child(3) {
@@ -232,7 +248,7 @@
 }
 @media ( max-width :680px ) {
   .feature-content {
-    margin-top: 140%;
+    margin-top: 0%;
   }
 }
 .feature-content h3 {
@@ -242,6 +258,11 @@
   font-size: 2.3rem;
   font-family: 'Quicksand', sans-serif;
   color: #2c419b;
+}
+@media ( max-width :680px ) {
+  .feature-content h3 {
+    justify-content: center;
+  }
 }
 .feature-content .column-cont-about {
   width: 100%;
@@ -304,10 +325,31 @@
   justify-content: space-evenly;
   font-family: 'Quicksand', sans-serif;
 }
+@media ( max-width :680px ) {
+  .feature-content .column-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1000px) {
+  .feature-content .column-cont {
+    margin-top: 10%;
+  }
+}
 .feature-content .column-cont .left-column {
   height: 500px;
   width: 25%;
   margin-top: 11%;
+}
+@media ( max-width :680px ) {
+  .feature-content .column-cont .left-column {
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) {
+  .feature-content .column-cont .left-column {
+    width: 40%;
+  }
 }
 .feature-content .column-cont .left-column p {
   line-height: 2;
@@ -328,6 +370,12 @@
   grid-template-rows: repeat(40, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
+}
+@media ( max-width :680px ) {
+  .feature-content .column-cont .right-column {
+    width: 90%;
+    margin-top: 50%;
+  }
 }
 .feature-content .column-cont .right-column p {
   font-family: 'Bungee', cursive;
@@ -362,25 +410,59 @@
   align-items: center;
 }
 .feature-content .column-cont .right-column .one {
-  grid-row: 7 / span 23;
+  grid-row: 7 / span 20;
   grid-column: 1 / span 2;
   z-index: 5;
   background: ghostwhite;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
+@media ( max-width :680px ) {
+  .feature-content .column-cont .right-column .one {
+    grid-row: 7 / span 17;
+    grid-column: 1 / span 3;
+  }
+}
+@media (max-width: 1000px) {
+  .feature-content .column-cont .right-column .one {
+    transform: rotate(-15deg);
+    grid-row: 7 / span 15;
+  }
+}
 .feature-content .column-cont .right-column .two {
   z-index: 10;
   background: #24dc8e;
-  grid-row: 15 / span 23;
+  grid-row: 15 / span 20;
   grid-column: 2 / span 2;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+@media ( max-width :680px ) {
+  .feature-content .column-cont .right-column .two {
+    grid-row: 16 / span 17;
+    grid-column: 2 / span 3;
+  }
+}
+@media (max-width: 1000px) {
+  .feature-content .column-cont .right-column .two {
+    grid-row: 15 / span 15;
+  }
 }
 .feature-content .column-cont .right-column .three {
   z-index: 2;
   grid-column: 3 / span 2;
   background: #2c419b;
-  grid-row: 1 / span 23;
+  grid-row: 1 / span 20;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+@media ( max-width :680px ) {
+  .feature-content .column-cont .right-column .three {
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 23;
+  }
+}
+@media (max-width: 1000px) {
+  .feature-content .column-cont .right-column .three {
+    grid-row: 6 / span 15;
+  }
 }
 #default {
   visibility: hidden;
