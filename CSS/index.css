@@ -388,6 +388,21 @@
   grid-row: 1 / span 23;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
+#default {
+  visibility: hidden;
+}
+#slideUp {
+  animation: slideUp 5s;
+  visibility: visible;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .footer {
   background: linear-gradient(90deg, #4632aa, #00a5ff 50%, #24c6dc);
   height: 300px;

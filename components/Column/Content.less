@@ -44,7 +44,8 @@
                 background:#4632aa;
                 overflow:hidden;
                 box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
-            
+                // visibility: hidden;
+
                .team-img{
 
                    img{
@@ -56,6 +57,7 @@
                    grid-column: 2/ span 2;
                }
             }
+
 
             .one{
                 grid-column: 1/span 1;
@@ -106,6 +108,10 @@
 
     }
 
+    //About content ^
+
+    //Column content
+
     .column-cont{
         display: flex;
         width: 100%;
@@ -141,6 +147,7 @@
             grid-template-rows: repeat(40, 1fr);
             grid-template-columns: repeat(4,1fr);
             grid-column-gap: 20px;
+            
 
             p{
                 font-family: @price-font;
@@ -215,4 +222,22 @@
     }
 }
 
+#default{
+    visibility: hidden;
+}
 
+#slideUp{
+    animation: slideUp 5s;
+    visibility: visible;
+
+  }
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+ 
+    }
+    100% {
+      opacity: 1;
+ 
+    }
+  }
