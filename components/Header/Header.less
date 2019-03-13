@@ -30,6 +30,11 @@
         transform: skewY(-13deg);
         top: 0px;
         transform-origin: 0;
+
+        @media @mobile {
+            height: 106%;
+        }
+
         .texture{
             
             &:first-child{
@@ -42,6 +47,9 @@
                     display:none;
                 }
 
+                @media @tablet {
+                    height: 16%;
+                }
             }
             &:nth-child(2){
 
@@ -51,8 +59,13 @@
                 top:calc(100%/4/2.5);
                 background: #0087ea;
                 right: 33.5%;
+
                 @media @mobile{
                     display:none;
+                }
+                @media @tablet{
+                    height: 16%;
+                    top: calc(-1%/4/2.5);
                 }
             }
 
