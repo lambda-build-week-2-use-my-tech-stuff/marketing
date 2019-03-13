@@ -76,13 +76,11 @@
   justify-content: space-around;
 }
 .top-bar .abtus {
-  font-weight: bold;
   font-size: 1.3rem;
 }
 .top-bar .abtus a {
   color: #2c419b;
   text-decoration: none;
-  font-weight: bold;
 }
 .top-bar .abtus a:hover {
   text-decoration: underline;
@@ -104,6 +102,11 @@
 }
 .top-bar .logIn {
   background-color: #24dc8e;
+}
+.global-container {
+  max-width: 1500px;
+  margin: 0px auto;
+  position: relative;
 }
 .background-cont {
   margin-bottom: 2%;
