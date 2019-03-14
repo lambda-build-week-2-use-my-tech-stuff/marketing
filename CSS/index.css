@@ -75,7 +75,7 @@
   display: flex;
   justify-content: space-around;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .top-bar .container-right {
     justify-content: flex-end;
   }
@@ -83,7 +83,7 @@
 .top-bar .container-right .hamburger {
   display: none;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .top-bar .container-right .hamburger {
     display: block;
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
@@ -106,7 +106,7 @@
 .top-bar .abtus a:hover {
   text-decoration: underline;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .top-bar .abtus {
     display: none;
   }
@@ -161,7 +161,7 @@
   top: 0px;
   transform-origin: 0;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .header .back-text {
     height: 106%;
   }
@@ -173,12 +173,12 @@
   top: calc(0%);
   background: #2c419b;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .header .back-text .texture:first-child {
     display: none;
   }
 }
-@media (max-width : 1000px) {
+@media (max-width: 1000px) {
   .header .back-text .texture:first-child {
     height: 16%;
   }
@@ -191,12 +191,12 @@
   background: #0087ea;
   right: 33.5%;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .header .back-text .texture:nth-child(2) {
     display: none;
   }
 }
-@media (max-width : 1000px) {
+@media (max-width: 1000px) {
   .header .back-text .texture:nth-child(2) {
     height: 16%;
     top: calc(-1%/4/2.5);
@@ -210,7 +210,7 @@
   top: 88%;
   border: 4px double #2c419b;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .header .back-text .texture:nth-child(3) {
     display: block;
     position: absolute;
@@ -243,9 +243,9 @@
   margin-top: 70px;
   text-align: center;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .header .background h3 {
     font-size: 2.063rem;
   }
@@ -254,7 +254,7 @@
   width: 100%;
   font-size: 1.5rem;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .header .background p {
     margin: 10px;
     margin-bottom: 40px;
@@ -275,7 +275,7 @@
   cursor: pointer;
   transform: scale(1.05);
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .header .background .button-signup {
     width: 70%;
   }
@@ -283,8 +283,9 @@
 .feature-content {
   display: flex;
   justify-content: center;
+  margin-top: 16%;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .feature-content {
     margin-top: 0%;
   }
@@ -297,7 +298,7 @@
   font-family: 'Quicksand', sans-serif;
   color: #2c419b;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .feature-content h3 {
     justify-content: center;
   }
@@ -311,8 +312,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 20px;
   grid-column-gap: 40px;
+  margin: 6%;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .feature-content .column-cont-about .grid-container {
     display: flex;
     flex-direction: column;
@@ -329,6 +331,15 @@
 }
 .feature-content .column-cont-about .grid-container .preview .team-content {
   grid-column: 2 / span 2;
+}
+.feature-content .column-cont-about .grid-container .preview .gitBtn {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: black;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  font-family: 'Bungee', cursive;
 }
 .feature-content .column-cont-about .grid-container .one {
   grid-column: 1 / span 1;
@@ -363,12 +374,12 @@
   justify-content: space-evenly;
   font-family: 'Quicksand', sans-serif;
 }
-@media (max-width : 1000px) {
+@media (max-width: 1000px) {
   .feature-content .column-cont {
     margin-top: 10%;
   }
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .feature-content .column-cont {
     flex-direction: column;
     align-items: center;
@@ -379,12 +390,12 @@
   width: 25%;
   margin-top: 11%;
 }
-@media (max-width : 1000px) {
+@media (max-width: 1000px) {
   .feature-content .column-cont .left-column {
     width: 40%;
   }
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .feature-content .column-cont .left-column {
     width: 90%;
   }
@@ -409,7 +420,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .feature-content .column-cont .right-column {
     width: 90%;
     margin-top: 70%;
@@ -454,13 +465,13 @@
   background: ghostwhite;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
-@media (max-width : 1000px) {
+@media (max-width: 1000px) {
   .feature-content .column-cont .right-column .one {
     transform: rotate(-15deg);
     grid-row: 7 / span 15;
   }
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .feature-content .column-cont .right-column .one {
     transform: rotate(0deg);
     grid-row: 7 / span 17;
@@ -474,12 +485,12 @@
   grid-column: 2 / span 2;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
-@media (max-width : 1000px) {
+@media (max-width: 1000px) {
   .feature-content .column-cont .right-column .two {
     grid-row: 15 / span 15;
   }
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .feature-content .column-cont .right-column .two {
     grid-row: 16 / span 17;
     grid-column: 2 / span 3;
@@ -492,12 +503,12 @@
   grid-row: 1 / span 20;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
-@media (max-width : 1000px) {
+@media (max-width: 1000px) {
   .feature-content .column-cont .right-column .three {
     grid-row: 6 / span 15;
   }
 }
-@media ( max-width : 680px ) {
+@media (max-width: 680px) {
   .feature-content .column-cont .right-column .three {
     grid-column: 2 / span 3;
     grid-row: 1 / span 23;
