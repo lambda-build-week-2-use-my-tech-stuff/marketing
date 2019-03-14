@@ -97,10 +97,10 @@
   }
 }
 .top-bar .abtus {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .top-bar .abtus a {
-  color: #2c419b;
+  color: #0f71a7;
   text-decoration: none;
 }
 .top-bar .abtus a:hover {
@@ -127,6 +127,9 @@
 .top-bar .topBtn:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+.top-bar .signup {
+  background: #3c4bf5;
 }
 .top-bar .logIn {
   background-color: #24dc8e;
@@ -560,6 +563,7 @@
 }
 .menu-cont a {
   color: white;
+  width: 100%;
 }
 .menu-cont .signup {
   background: #3c4bf5;
