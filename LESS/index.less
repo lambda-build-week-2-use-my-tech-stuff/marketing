@@ -6,11 +6,13 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 @import url("https://fonts.googleapis.com/css?family=Bungee");
 @import './variables.less';
+@import './components/footer/footer';
 @import './components/TopBar/TopBar';
 @import './components/Header/Header';
 @import './components/Column/Content';
-@import './components/footer/footer';
+
 @import './components/menu/menu';
+
 * { 
   box-sizing: border-box;
 }
@@ -29,6 +31,16 @@ body {
 	text-rendering: optimizeLegibility;
  
   
+}
+
+a{
+  text-decoration: none;
+  color:white;
+  &:visited{
+
+    text-decoration: none;
+
+  }
 }
   
 // @import './variables.less';
