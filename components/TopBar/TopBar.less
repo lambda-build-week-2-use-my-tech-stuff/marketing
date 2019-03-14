@@ -28,18 +28,44 @@
         width: 173px;
         display: flex;
         justify-content: space-around;
+        @media @mobile{
+            justify-content: flex-end;
+        }
+
+        .hamburger{
+            display:none;
+            
+    
+            @media @mobile{
+                display:block;
+                box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+                border-radius: 10px;
+                background-color: #24dc8e;
+                padding:2px 2px 0px 2px;
+                &:hover{
+                    cursor: pointer;
+                    opacity: .75;
+                }
+            }
+            
+           
+        }
+       
     }
+
+   
     .abtus{
 
         
-        font-size:1.3rem;
+        font-size:1.5rem;
+        
         
 
          
 
 
         a{
-            color:#2c419b;
+            color:#0f71a7;
             text-decoration: none;
             
 
@@ -48,14 +74,22 @@
             }
         }
         
-         
+        
     }
 
   
     @media @mobile{
-    .abtus{
+        .abtus{
         display:none;
-    }
+        }
+        .signup{
+        display:none;
+        }
+
+        .logIn{
+            display:none;
+        }
+       
     }
     .topBtn{
         border-radius: 10px;
@@ -66,7 +100,12 @@
 
         &:hover{
             cursor: pointer;
+            transform:scale(1.05);
         }
+    }
+
+    .signup{
+        background:#3c4bf5;
     }
 
     .logIn{

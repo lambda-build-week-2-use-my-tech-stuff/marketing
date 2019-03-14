@@ -1,0 +1,74 @@
+.menu-cont{
+    
+    position: absolute;
+    z-index: 800;
+    top:17%;
+    
+    opacity: 1;
+    display:block;
+    border-radius: 10px;
+    // height:42%;
+    width:97%;
+    margin:0px 2%;
+    background-image: linear-gradient(to top right, rgba(255,0,0,0), rgba(36,220,142,1)40%);
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-row-gap: 0%;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+
+    .menu{
+        padding:20px;
+        font-family: @price-font;
+        border-radius: 10px;
+        color:white;
+        box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+        margin:4%;
+        text-align: center;
+        font-size: 1.15rem;
+        &:hover{
+            opacity: .9;
+            cursor: pointer;
+        }
+    }
+    a:link{
+        text-decoration: none;
+        &:visited{
+            text-decoration: none;
+            color:white;
+        }
+    }
+
+    a{
+        color:white;
+        width:100%;
+    }
+    .signup{
+        background:#3c4bf5;
+        grid-column: 2/span 3;
+       
+    }
+
+    .login{
+
+        background:violet;
+        grid-column: 3/span 2;
+        
+    }
+
+    .team{
+       
+        background:lightblue;
+        grid-column: 3/span2;
+
+    }
+
+    
+}
+
+
+
+.hide{
+    display:none;
+}
+
