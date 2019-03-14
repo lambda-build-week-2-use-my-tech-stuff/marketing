@@ -69,11 +69,32 @@
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 680px) {
+  .top-bar .container-right {
+    justify-content: flex-end;
+  }
+}
+.top-bar .container-right .hamburger {
+  display: none;
+}
+@media (max-width: 680px) {
+  .top-bar .container-right .hamburger {
+    display: block;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    border-radius: 10px;
+    background-color: #24dc8e;
+    padding: 2px 2px 0px 2px;
+  }
+  .top-bar .container-right .hamburger:hover {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+}
 .top-bar .abtus {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .top-bar .abtus a {
-  color: #2c419b;
+  color: #0f71a7;
   text-decoration: none;
 }
 .top-bar .abtus a:hover {
@@ -81,6 +102,12 @@
 }
 @media (max-width: 680px) {
   .top-bar .abtus {
+    display: none;
+  }
+  .top-bar .signup {
+    display: none;
+  }
+  .top-bar .logIn {
     display: none;
   }
 }
@@ -93,6 +120,10 @@
 }
 .top-bar .topBtn:hover {
   cursor: pointer;
+  transform: scale(1.05);
+}
+.top-bar .signup {
+  background: #3c4bf5;
 }
 .top-bar .logIn {
   background-color: #24dc8e;
@@ -236,6 +267,7 @@
 }
 .header .background .button-signup:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 @media (max-width: 680px) {
   .header .background .button-signup {
@@ -267,20 +299,6 @@
 }
 .feature-content .column-cont-about {
   width: 100%;
-}
-.feature-content .column-cont-about .grid-container {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 20px;
-  grid-column-gap: 40px;
-  margin: 6%;
-}
-@media (max-width: 680px) {
-  .feature-content .column-cont-about .grid-container {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .feature-content .column-cont-about .grid-container .preview {
   border-radius: 35px;
@@ -385,7 +403,7 @@
 @media (max-width: 680px) {
   .feature-content .column-cont .right-column {
     width: 90%;
-    margin-top: 50%;
+    margin-top: 70%;
   }
 }
 .feature-content .column-cont .right-column p {
@@ -435,6 +453,7 @@
 }
 @media (max-width: 680px) {
   .feature-content .column-cont .right-column .one {
+    transform: rotate(0deg);
     grid-row: 7 / span 17;
     grid-column: 1 / span 3;
   }
