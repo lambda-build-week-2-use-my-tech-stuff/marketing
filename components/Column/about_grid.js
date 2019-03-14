@@ -48,6 +48,24 @@ function fire (){
        grid.style.flexDirection = "column";
 
     }
+    else{
+        grid.style.display = "grid";
+       
+    }
+};
+
+function fire_big (){
+    const media = window.matchMedia('(min-width: 680px)');
+    if (media.matches){
+        console.log('flex firing');
+       let grid = document.querySelector('.grid-container')
+       grid.style.display = "grid";
+
+    }
+    else{
+        
+       
+    }
 };
 
 
@@ -60,6 +78,7 @@ our_grid.forEach(function(currentValue){
 });
 
 fire();
+fire_big();
 
 //grid item constructor
 //only worry about grid position here
