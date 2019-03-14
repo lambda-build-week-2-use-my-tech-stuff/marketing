@@ -14,6 +14,55 @@
     display:grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(5,1fr);
+    grid-row-gap: 5%;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+
+    .menu{
+        padding:20px;
+        font-family: @price-font;
+        border-radius: 10px;
+        color:white;
+        box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+        margin:4%;
+        text-align: center;
+        font-size: 1.15rem;
+        &:hover{
+            opacity: .9;
+            cursor: pointer;
+        }
+    }
+    a:link{
+        text-decoration: none;
+        &:visited{
+            text-decoration: none;
+            color:white;
+        }
+    }
+
+    a{
+        color:white;
+    }
+    .signup{
+        background:#3c4bf5;
+        grid-column: 2/span 3;
+       
+    }
+
+    .login{
+
+        background:violet;
+        grid-column: 3/span 2;
+        
+    }
+
+    .team{
+       
+        background:lightblue;
+        grid-column: 3/span2;
+
+    }
+
+    
 }
 
 
