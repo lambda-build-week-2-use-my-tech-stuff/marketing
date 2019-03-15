@@ -1,3 +1,11 @@
+.global-container{
+    width:100%;
+    @media (min-width: 1600px) {
+      .global-container {
+        width: 1570px;
+      }
+    }
+}
 .top-bar{
     width:100%;
     padding:20px;
@@ -18,18 +26,23 @@
         font-family: 'Pacifico', cursive;
         font-size: 2.7rem;
         margin-right: 5px;
+
+  
     }
-    .tech{
-        display:inline-block;
-        font-family: @logo-tech;
-        font-size: 1.1rem;
-    }
+
+    
     .container-right{
         width: 173px;
         display: flex;
+        font-size: 1.1rem;
         justify-content: space-around;
         @media @mobile{
             justify-content: flex-end;
+
+        }
+        a{
+            text-decoration: none;
+            color:white;
         }
 
         .hamburger{
@@ -97,7 +110,7 @@
         background-color: orange;
         font-weight: bold;
         box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
-
+        
         &:hover{
             cursor: pointer;
             transform:scale(1.05);
@@ -110,6 +123,7 @@
 
     .logIn{
         background-color: #24dc8e;
+        
     }
     
 }

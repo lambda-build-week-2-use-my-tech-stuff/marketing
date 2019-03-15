@@ -19,15 +19,30 @@
 html, body {
   margin: 0; 
   padding: 0; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
 body {
   display:flex;
   flex-direction: column;
-  font-size: 62.5;
+  font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
- 
-  
+}
+
+
+.global-container{
+  width:100%;
+  @media (min-width: 1600px) {
+    .global-container {
+      width: 1570px;
+    }
+  }
+
+}
+
+a{
+  text-decoration: none;
+  color:white;
 }
