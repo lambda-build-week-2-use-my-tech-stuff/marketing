@@ -318,6 +318,7 @@
 }
 .feature-content .column-cont-about {
   width: 100%;
+  padding: 10%;
 }
 .feature-content .column-cont-about .grid-container {
   font-family: 'Bungee', cursive;
@@ -544,14 +545,14 @@
   }
 }
 footer {
-  background: #4632aa;
+  background: #2c419b;
   height: 10vh;
   margin-top: 10%;
 }
 .menu-cont {
   position: absolute;
   z-index: 800;
-  top: 17%;
+  top: 5%;
   opacity: 1;
   display: block;
   border-radius: 10px;
