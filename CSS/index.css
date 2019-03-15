@@ -70,20 +70,6 @@ footer {
   font-size: 2.7rem;
   margin-right: 5px;
 }
-.top-bar .logo-main .toys {
-  height: 100%;
-  width: calc(135px*2);
-  top: 10%;
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-.top-bar .tech {
-  display: inline-block;
-  font-family: 'VT323', monospace;
-  font-size: 1.1rem;
-}
 .top-bar .container-right {
   width: 173px;
   display: flex;
@@ -152,11 +138,6 @@ footer {
 }
 .top-bar .logIn {
   background-color: #24dc8e;
-}
-.global-container {
-  max-width: 1500px;
-  margin: 0px auto;
-  position: relative;
 }
 .background-cont {
   margin-bottom: 2%;
@@ -597,7 +578,7 @@ footer {
 .menu-cont {
   position: absolute;
   z-index: 800;
-  top: 5%;
+  top: 13%;
   opacity: 1;
   display: block;
   border-radius: 10px;
