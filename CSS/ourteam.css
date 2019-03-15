@@ -134,6 +134,14 @@
 .top-bar .logIn {
   background-color: #24dc8e;
 }
+.global-container {
+  width: 100%;
+}
+@media (min-width: 1600px) {
+  .global-container .global-container {
+    width: 1570px;
+  }
+}
 .background-cont {
   margin-bottom: 2%;
 }
@@ -318,7 +326,7 @@
 }
 .feature-content .column-cont-about .grid-container .preview {
   border-radius: 35px;
-  background: #4632aa;
+  background: #24dc8e;
   overflow: hidden;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }

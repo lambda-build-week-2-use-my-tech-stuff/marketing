@@ -24,6 +24,15 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.global-container{
+  width:100%;
+  @media (min-width: 1600px) {
+    .global-container {
+      width: 1570px;
+    }
+  }
+}
+
 body {
   display:flex;
   flex-direction: column;
@@ -35,14 +44,7 @@ body {
   
 }
 
-.global-container{
-  width:100%;
-  @media (min-width: 1600px) {
-    .global-container {
-      width: 1570px;
-    }
-  }
-}
+
 
 a{
   text-decoration: none;
